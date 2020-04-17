@@ -1,4 +1,10 @@
 @import "libs/bootstrap.min.css";
 @import "utils/mixins/fluid-font-size";
+@import "utils/mixins/text-components";
 @import "theme/fonts";
 @import "base/normalize";
+@import "theme/theme";
+@import "base/typography";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";

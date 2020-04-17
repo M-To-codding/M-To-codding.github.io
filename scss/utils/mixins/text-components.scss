@@ -1,0 +1,15 @@
+@mixin title($size, $color){
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin paragraph() {
+
+}
+
+@mixin link() {
+
+}

@@ -1,0 +1,4 @@
+.main-title {
+  @include title(map-get($fonts-sizes, h1), $main-title-color);
+  line-height: 55px;
+}

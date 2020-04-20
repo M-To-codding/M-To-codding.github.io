@@ -90,9 +90,10 @@ gulp.task('scss', () => {
 gulp.task('scripts', function () {
     return gulp.src([
         paths.src.scripts + '/libs/jquery/jquery.min.js',
-        paths.src.scripts + '/libs/*.js',
+        paths.src.scripts + '/libs/**/*.js',
         paths.src.scripts + '/helpers/**/*.js',
-        paths.src.scripts + '/components/**/*.js'
+        paths.src.scripts + '/components/**/*.js',
+        paths.src.scripts + '/*.js'
     ])
         .pipe(concat('main.js'))
         .pipe(babel({presets: ['es2015']}))

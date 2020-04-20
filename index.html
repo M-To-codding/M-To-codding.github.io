@@ -2,147 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
 
-<header>
-  <article class="header-caption-text">
-    <h1 class="main-title">Користуйтесь самі. Пропонуйте іншим. Заробляйте.</h1>
-    <p>Партнерська програма Yaware</p>
-    <button>Стати партнером</button>
-    <a href="#">вхід для партнерів</a>
-  </article>
-  <article class="header-caption-media">
-    <ul class="card">
-      <li class="card-item">
-        <p>
-          <span>34 245</span>
-          <span>грн</span>
-        </p>
-        <p>заробив на партнерській програмі кращий партнер</p>
-      </li>
-      <li class="card-item">
-        <p>450</p>
-        <p>активних партнерів заробляють з нами</p>
-      </li>
-      <li class="card-item">
-        <p>
-          <span>до</span>
-          <span>50</span>
-          <span>%</span>
-        </p>
-        <p>з кожної покупки</p>
-      </li>
-    </ul>
-    <img src="./assets/images/caption-img.png" alt="">
-  </article>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <article class="col-6 header-caption-text"  data-aos="fade-up"
+               data-aos-duration="1500">
+        <h1 class="main-title">Користуйтесь самі. Пропонуйте іншим. Заробляйте.</h1>
+        <h3 class="subtitle">Партнерська програма Yaware</h3>
+        <button type="button" class="btn btn-primary">Стати партнером</button>
+        <a href="#" class="link header-link">вхід для партнерів</a>
+      </article>
+
+      <article class="col-6 header-caption-media" data-aos="fade-up"
+               data-aos-duration="1000">
+        <div class="bg-image"></div>
+        <ul class="cards">
+          <li class="card" data-aos="fade-up"
+              data-aos-duration="1200">
+            <p class="card-counter">
+              <span class="count green-text">34 245</span>
+              <span class="green-text">грн</span>
+            </p>
+            <p class="card-text">заробив на партнерській програмі кращий партнер</p>
+          </li>
+          <li class="card" data-aos="fade-up"
+              data-aos-duration="1300">
+            <p class="card-counter">
+              <span class="count green-text">450</span>
+            </p>
+            <p class="card-text">активних партнерів заробляють з нами</p>
+          </li>
+          <li class="card" data-aos="fade-up"
+              data-aos-duration="1500">
+            <p class="card-counter">
+              <span class="prefix">до</span>
+              <span class="count green-text">50</span>
+              <span class="green-text big-font">%</span>
+            </p>
+            <p class="card-text">з кожної покупки</p>
+          </li>
+        </ul>
+        <img class="caption-image" src="./assets/images/caption-img.png" alt="" data-aos="fade-up"
+             data-aos-duration="1600">
+      </article>
+    </div>
+  </div>
 </header>
-<main>
-  <article class="advantages">
-    <h2 class="secondary-title">Що ви отримуєте від роботи з нами?</h2>
 
-    <ul class="advantages-list">
-      <li>
-        <img src="./assets/images/ic-advantages1.png" alt="">
-        <div>
-          <h5>
-            Ріст доходу
-          </h5>
-          <p>
-            Вам не обов’язково продавати Yaware.TimeTracker самому. Розмістіть інформацію про
-            сервіс у своїх соціальних мережах, блозі чи на сайті. Залучайте якнайбільше
-            клієнтів та збільшуйте % винагороди з кожної покупки.
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="./assets/images/ic-advantages2.png" alt="">
-        <div>
-          <h5>
-            Підтримку менеджера
-          </h5>
-          <p>
-            Ми з вами онлайн. Складіть список потенційних клієнтів та проконсультуйтеся з
-            нашим менеджером щодо того, як краще запропонувати сервіс тому чи іншому клієнтові.
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="./assets/images/ic-advantages3.png" alt="">
-        <div>
-          <h5>
-            Рекламні матеріали
-          </h5>
-          <p>
-            Ви отримуєте банери, листівки, матеріали для email-розсилання та сайту. Просто знайдіть ідеальне
-            місце для розміщення кожного інструменту, поширюйте інформацію та збільшуйте кількість залучених клієнтів.
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="./assets/images/ic-advantages4.png" alt="">
-        <div>
-          <h5>
-            Скрипти та приклади листів
-          </h5>
-          <p>
-            У вашому розпорядженні пакет матеріалів для навчання від наших менеджерів з продажу. Користуйтесь
-            готовими скриптами, розсилайте шаблони листів або попросіть менеджера підготувати презентацію
-            для індивідуальної пропозиції продукту.
-          </p>
-        </div>
-      </li>
-    </ul>
+<main class="main-content">
+  <article class="article advantages">
 
+    <div class="decoration-element">
+      <img src="./assets/images/advantages-bg.png" alt="">
+    </div>
 
-    <button>Стати партнером</button>
+    <div class="container">
+      <h2 class="secondary-title" data-aos="fade-up"
+          data-aos-duration="1000">Що ви отримуєте від роботи з нами?</h2>
+
+      <ul class="row advantages-list justify-content-between">
+        <li class="col-6 advantages-item">
+          <div class="advantages-image" data-aos="fade-up"
+               data-aos-duration="1000" data-aos-delay="100">
+            <img src="./assets/images/ic-advantages1.png" alt="">
+          </div>
+          <div class="description-content">
+            <h5 class="small-title" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="250">
+              Ріст доходу
+            </h5>
+            <p class="description" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="350">
+              Вам не обов’язково продавати Yaware.TimeTracker самому. Розмістіть інформацію про
+              сервіс у своїх соціальних мережах, блозі чи на сайті. Залучайте якнайбільше
+              клієнтів та збільшуйте % винагороди з кожної покупки.
+            </p>
+          </div>
+        </li>
+        <li class="col-6 advantages-item">
+          <div class="advantages-image" data-aos="fade-up"
+               data-aos-duration="1000"  data-aos-delay="200">
+            <img src="./assets/images/ic-advantages2.png" alt="">
+          </div>
+          <div class="description-content">
+            <h5 class="small-title" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="350">
+              Підтримку менеджера
+            </h5>
+            <p class="description" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="450">
+              Ми з вами онлайн. Складіть список потенційних клієнтів та проконсультуйтеся з
+              нашим менеджером щодо того, як краще запропонувати сервіс тому чи іншому клієнтові.
+            </p>
+          </div>
+        </li>
+        <li class="col-6 advantages-item">
+          <div class="advantages-image" data-aos="fade-up"
+               data-aos-duration="1000" data-aos-delay="500">
+            <img src="./assets/images/ic-advantages3.png" alt="">
+          </div>
+          <div class="description-content">
+            <h5 class="small-title" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="550">
+              Рекламні матеріали
+            </h5>
+            <p class="description" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="600">
+              Ви отримуєте банери, листівки, матеріали для email-розсилання та сайту. Просто знайдіть ідеальне
+              місце для розміщення кожного інструменту, поширюйте інформацію та збільшуйте кількість залучених клієнтів.
+            </p>
+          </div>
+        </li>
+        <li class="col-6 advantages-item">
+          <div class="advantages-image" data-aos="fade-up"
+               data-aos-duration="1000"  data-aos-delay="650">
+            <img src="./assets/images/ic-advantages4.png" alt="">
+          </div>
+          <div class="description-content">
+            <h5 class="small-title" data-aos="fade-up"
+                data-aos-duration="800" data-aos-delay="750">
+              Скрипти та приклади листів
+            </h5>
+            <p class="description" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="800">
+              У вашому розпорядженні пакет матеріалів для навчання від наших менеджерів з продажу. Користуйтесь
+              готовими скриптами, розсилайте шаблони листів або попросіть менеджера підготувати презентацію
+              для індивідуальної пропозиції продукту.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sized-box"></div>
+
+      <button type="button" class="btn btn-success">Стати партнером</button>
+    </div>
   </article>
 </main>
-<footer>
-  <article>
-    <div class="row">
-      <h6>Про Yaware.TimeTracker</h6>
-      <a href="#">Наші клієнти</a>
-      <a href="#">Відгуки</a>
-      <a href="#">Порівняння Yaware.TimeTracker з іншими сервісами</a>
-    </div>
+
+<footer class="footer">
+  <article class="container footer-links">
 
     <div class="row">
-      <h6>Додаткова інформація</h6>
-      <a href="#">Умови надання послуг</a>
-      <a href="#">Політика конфіденційності</a>
-      <a href="#">Документи</a>
-      <a href="#">Історія версій</a>
-    </div>
+      <div class="col-3 links-block">
+        <h6 class="small-title" data-aos="fade-up"
+            data-aos-duration="800" >Про Yaware.TimeTracker</h6>
+        <a class="link" href="#" data-aos="fade-up"
+           data-aos-duration="800" data-aos-delay="50">Наші клієнти</a>
+        <a class="link" href="#" data-aos="fade-up"
+           data-aos-duration="800" data-aos-delay="300">Відгуки</a>
+        <a class="link" href="#" data-aos="fade-up"
+           data-aos-duration="800" data-aos-delay="500">Порівняння Yaware.TimeTracker з іншими сервісами</a>
+      </div>
 
-    <div class="row">
-      <h6>Важливе</h6>
-      <a href="#">Що таке Yaware.TimeTracker?</a>
-      <a href="#">Можливості</a>
-      <a href="#">Ціни</a>
-      <a href="#">Блог</a>
-      <a href="#">Допомога</a>
-    </div>
-    <div class="row">
-      <h6>Для бізнесу</h6>
-      <a href="#">Галузі використання</a>
-      <a href="#">Рішення для бізнесу</a>
-      <a href="#">Контакти</a>
-      <a href="#">Партнеру</a>
-    </div>
+      <div class="col-3 links-block">
+        <h6 class="small-title" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="70">Додаткова інформація</h6>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="300">Умови надання послуг</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="500">Політика конфіденційності</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="700">Документи</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="850">Історія версій</a>
+      </div>
 
+      <div class="col-3 links-block">
+        <h6 class="small-title" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="90">Важливе</h6>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="350">Що таке Yaware.TimeTracker?</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="550">Можливості</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="650">Ціни</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="750">Блог</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="850">Допомога</a>
+      </div>
+
+      <div class="col-3 links-block">
+        <h6 class="small-title" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="110">Для бізнесу</h6>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="400">Галузі використання</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="600">Рішення для бізнесу</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="800">Контакти</a>
+        <a class="link" href="#" data-aos="fade-up"
+               data-aos-duration="800" data-aos-delay="900">Партнеру</a>
+      </div>
+    </div>
   </article>
 
   <article class="contacts">
-    <a href="#">Є запитання? Задавайте!</a>
-    <p><span>Телефон/Факс: </span><span>+38 (044) 360 45 13</span></p>
-    <p><span>Email: </span><span>contact@yaware.com.ua</span></p>
+    <div class="container">
+      <div class="row contacts-content">
+        <h6 class="small-title">Є запитання? Задавайте!</h6>
+        <p class="row contact-item">
+          <span class="text">Телефон/Факс: &nbsp</span>
+          <a class="link" href="tel:+38 (044) 360 45 13"> +38 (044) 360 45 13</a>
+        </p>
+        <p class="row contact-item">
+          <span class="text">Email: &nbsp</span>
+          <a class="link" href="mailto:contact@yaware.com.ua"> contact@yaware.com.ua</a>
+        </p>
+      </div>
+    </div>
   </article>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="dist/js/main.min.js"></script>
 </body>
 </html>

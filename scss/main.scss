@@ -2,9 +2,13 @@
 @import "utils/mixins/fluid-font-size";
 @import "utils/mixins/text-components";
 @import "theme/fonts";
+@import "base/typography";
 @import "base/normalize";
 @import "theme/theme";
-@import "base/typography";
+@import "utils/helpers";
+@import "components/buttons";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
+@import "pages/home";
+@import "mediaqueries";

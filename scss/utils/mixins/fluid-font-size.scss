@@ -12,12 +12,15 @@
     & {
 
       font-size: $min-font-size;
+      line-height: $min-font-size+5;
       @media screen and (min-width: $min-vw) {
         font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        line-height: calc(#{$min-font-size} + #{strip-unit($max-font-size*1.8 - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
 
       @media screen and (min-width: $max-vw) {
         font-size: $max-font-size;
+        line-height: $max-font-size+8;
       }
     }
   }

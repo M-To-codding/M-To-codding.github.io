@@ -1,15 +1,27 @@
-@mixin title($size, $color){
+@mixin title($fontSize, $color, $minFontSize) {
   font-family: Montserrat-Bold;
   font-style: normal;
   font-weight: normal;
-  font-size: $size;
+  @include fluid-type($min_width, $max_width, $minFontSize, $fontSize);
   color: $color;
 }
 
-@mixin paragraph() {
-
+@mixin paragraph($fontSize, $color) {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  @include fluid-type($min_width, $max_width, $min_font, $fontSize);
+  color: $color;
 }
 
-@mixin link() {
+@mixin link($fontSize, $color, $fontFamily) {
+  font-family: $fontFamily, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  //line-height: 30px;
+  text-align: center;
+  @include fluid-type($min_width, $max_width, $min_font, $fontSize);
 
+  color: $color;
+  transition: 0.5s;
 }

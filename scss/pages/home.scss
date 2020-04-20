@@ -1,0 +1,48 @@
+.secondary-title {
+  @include title(map_get($fonts-sizes, h2), $secondary-title-color, 18px);
+  margin: auto;
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+
+.advantages {
+  overflow-x: hidden;
+  position: relative;
+
+  .small-title {
+    @include title(map_get($fonts-sizes, h5), $small-title-color2, 16px);
+    margin-bottom: 12px;
+  }
+
+  .description {
+    @include paragraph(map_get($fonts-sizes, p-sm), $text-color2);
+  }
+
+  .decoration-element {
+    position: absolute;
+    bottom: 108px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.advantages-item {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.advantages-image {
+  min-width: 150px;
+  min-height: 144px;
+
+  img {
+    width: 100%;
+  }
+}

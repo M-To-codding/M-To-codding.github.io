@@ -1,0 +1,53 @@
+.btn {
+  border-radius: 3px;
+  min-width: 250px;
+  min-height: 50px;
+  max-width: 334px;
+  max-height: 64px;
+  width: 100%;
+  padding: 2% 5%;
+  line-height: normal;
+  height: 100%;
+
+  font-family: Montserrat-Bold;
+  @include fluid-type($min_width, $max_width, $min_font, map_get($fonts-sizes, h5));
+
+  text-align: center;
+  border: none;
+}
+
+.btn-primary {
+  background: $blue;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+
+  color: $white;
+  margin-bottom: 16px;
+}
+
+.btn-success {
+  background: $green;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+
+  color: $white;
+  margin: auto;
+  display: block;
+}
+
+.link {
+  display: block;
+  margin: auto;
+  text-decoration: underline !important;
+  @include link(map_get($fonts-sizes, h6), $link-color1, 'Open Sans');
+  opacity: 0.8;
+
+  &:focus, &:hover, &:visited {
+    color: inherit;
+    text-decoration: underline;
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.contact-link {
+  @include link(map_get($fonts-sizes, p-sm), $link-color2, Montserrat);
+}

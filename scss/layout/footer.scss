@@ -1,0 +1,48 @@
+.footer {
+  background-color: $gray;
+  padding-top: 9%;
+
+  .small-title {
+    @include title(map_get($fonts-sizes, h6), $blue, 14px);
+    margin-bottom: 12px;
+  }
+
+  .link {
+    text-align: left;
+    color: $link-color2;
+    text-decoration: none !important;
+    font-size: map_get($fonts-sizes, p-sm);
+  }
+
+  .contacts {
+    padding: 60px 0;
+    background-color: $dark-gray;
+
+    .small-title {
+      margin: 0;
+      //color: $blue;
+      //font-size: map_get($fonts-sizes, p);
+    }
+
+    &-content {
+      justify-content: space-around;
+    }
+
+    .contact-item {
+      .link {
+        margin: 0;
+        font-size: map_get($fonts-sizes, p-sm);
+        line-height: normal;
+      }
+
+      .text {
+        color: $tip-color;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.footer-links {
+  padding-bottom: 95px;
+}
